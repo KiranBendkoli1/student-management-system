@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration</title>
+    <title>login</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+    
     <script>
         $(document).ready(function(){
             $("#loginform").submit(function(){
@@ -38,20 +38,24 @@
             });
         });
     </script>
+    <style>
+        
+    </style>
 </head>
 <body>
-    <h1>Student Login form</h1>
+    <div style="text-align: center; "><?php require_once 'nav.php'; ?></div>
+    <h1 style="text-align: center; ">Student Login form</h1>
     <div id="pt"></div>
     <div>
-        <form method="post" id="loginform">
+        <form method="post" id="loginform" style=" margin-left : 40%;">
             <table>
                 <tr>
                     <td>Enter Email Addess:</td>
-                    <td><input type="email" name="email" ></td>
+                    <td><input type="email" name="email" required></td>
                 </tr>
                 <tr>
                     <td>Enter Password: </td>
-                    <td><input type="password" name="password" ></td>
+                    <td><input type="password" name="password" required></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button type="submit" name="submit">login</button></td>

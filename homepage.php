@@ -23,8 +23,9 @@ if(isset($_SESSION['login'])){
     </style>
 </head>
 <body>
-    <h1>Students Information</h1> <a href="logout.php">LOGOUT</a>
-    <table border='1'>
+    <h1 style="text-align: center; ">Students Information</h1> 
+    <p style="text-align: end; " ><a href="logout.php" >LOGOUT</a></p>
+    <table border='1' style=" margin-left : 40%;">
         <tr>
             <td>Student's Name</td>
             <td><?php echo $name; ?></td>

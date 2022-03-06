@@ -36,34 +36,35 @@
     </script>
 </head>
 <body>
-    <h1>Student Form</h1>
+<div style="text-align: center; "><?php require_once 'nav.php'; ?></div>
+    <h1 style="text-align: center; ">Student Registration form</h1>
     <div id="pt"></div>
     <div>
-        <form method="post" id="regform">
+        <form method="post" id="regform" style=" margin-left : 40%;">
             <table>
                 <tr>
                     <td>Enter Name:</td>
-                    <td><input type="text" name="name" ></td>
+                    <td><input type="text" name="name" required ></td>
                 </tr>
                 <tr>
                     <td>Enter Class:</td>
-                    <td><input type="text" name="class" ></td>
+                    <td><input type="text" name="class" required></td>
                 </tr>
                 <tr>
                     <td>Enter Mobile No:</td>
-                    <td><input type="text" name="mobile" ></td>
+                    <td><input type="text" name="mobile" required></td>
                 </tr>
                 <tr>
                     <td>Enter Address: </td>
-                    <td><input type="text" name="address" ></td>
+                    <td><input type="text" name="address" required ></td>
                 </tr>
                 <tr>
                     <td>Enter Email Addess:</td>
-                    <td><input type="email" name="email" ></td>
+                    <td><input type="email" name="email" required></td>
                 </tr>
                 <tr>
                     <td>Enter Password: </td>
-                    <td><input type="password" name="password" ></td>
+                    <td><input type="password" name="password" required></td>
                 </tr>
                 <tr>
                     <td colspan="2"><button type="submit" name="submit">Register</button></td>
